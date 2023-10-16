@@ -31,7 +31,7 @@ const tx = jateDb.transaction('jate', 'readonly');
 const store = tx.objectStore('jate');
 const request = store.getAll();
 const result = await request;
-console.log('Data read from database', result);
+console.log('result.value', result);
 return result.value;
 };
 
