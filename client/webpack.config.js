@@ -10,7 +10,6 @@ module.exports = () => {
     entry: {
       main: "./src/js/index.js",
       install: "./src/js/install.js",
-      database: './src/js/database.js',
     },
     output: {
       filename: "[name].bundle.js",
@@ -26,15 +25,14 @@ module.exports = () => {
         swDest: "src-sw.js",
       }),
       new WebpackPwaManifest({
-        fingerprints: false,
-        inject: true,
         name: "Just Another Text Editor",
         short_name: "JATE",
-        description: "A simple text editor",
-        background_color: "#545454",
+        description: "A text editor to use online or offline",
+        background_color: "#534E59",
         theme_color: "#9650E1",
+        crossorigin: "use-credentials",
         start_url: "/",
-        publicPath: "/",
+        display: "standalone",
         icons: [
           {
             src: path.resolve("src/images/logo.png"),

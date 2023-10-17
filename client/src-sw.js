@@ -38,3 +38,10 @@ registerRoute(
     ],
   }),
 );
+
+
+// Implement offline fallback
+offlineFallback({
+  pageFallback: '/index.html',
+});
+
