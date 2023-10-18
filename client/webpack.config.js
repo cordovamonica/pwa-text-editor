@@ -32,7 +32,10 @@ module.exports = () => {
         theme_color: "#9650E1",
         crossorigin: "use-credentials",
         start_url: "/",
+        publicPath: "./",
         display: "standalone",
+        fingerprints: false,
+        inject: true,
         icons: [
           {
             src: path.resolve("src/images/logo.png"),
