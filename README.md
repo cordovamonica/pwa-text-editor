@@ -4,6 +4,9 @@
 ## Description
  The text editor is a Progressive Web App that allows the user to download the application to their desktop or mobile device. The application can be used offline. The application uses IndexedDB to store data locally and syncs with IndexedDB when the user is online. The application uses service workers to cache data and assets for offline use.
 
+ ## Deployed Application
+ https://safe-fortress-11725-881c2621c3c1.herokuapp.com/
+
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
